@@ -1,0 +1,207 @@
+body{
+	background-color: #f9fffe;
+}
+
+#home{
+	position: absolute;
+	width: 147px;
+	height: 40px;
+}
+
+#home:hover{
+	cursor: pointer;
+}
+
+h1{
+	font-family: "Trebuchet MS", sans-serif;
+	letter-spacing: 4px;
+	color: #33373a;
+}
+
+/*Account buttons
+*/
+.button-container{
+	position: absolute;
+	width: 180px;
+	height: 50px;
+	right: 0px;
+	top: 0px;
+	margin: 10px;
+}
+
+.user-button{
+	position: relative;
+	width: 64px;
+	height: 35px;
+	margin: 7px;
+	right: 0px;
+	background-color: #dddddd;
+	border-radius: 1px;
+	border-style: solid;
+    border-width: 0.5px 1px 1px 1px;
+    border-color: #c1c1c1;
+	text-align: center;
+	line-height: 33px;
+	font-family: "Trebuchet MS", sans-serif;
+	box-shadow: 0.5px 1px #8c8c8c;
+	float: left;
+}
+
+.user-button:hover{
+	cursor: pointer;
+}
+
+.user-button:active{
+	background-color: #c9c9c9;
+	border-color: #cecece;
+}
+
+#logout{
+	position: absolute;
+	right: 20px;
+	display: none;
+}
+
+/* Search form styling
+*/
+h2{
+	text-align: center;
+	font-family: "Trebuchet MS", sans-serif;
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+
+#main-wrap{
+	width: 100%;
+	height: 500px;
+	background-size: cover;
+	background-color: #edf1ff;
+	background-image: url(../img/airplane.jpg);
+}
+
+#search-main{
+	margin: auto;
+	left: 100px;
+	width: 460px;
+	height: 380px;
+	background-color: white;
+	border-radius: 2px;
+	box-shadow: -1px 0px 1px 1px #846026, 1px 0px 1px 1px #846026;
+}
+
+.search-label{
+	padding-right: 5px;
+	width: 55px;
+	height: 44px;
+	float: left;
+	font-family: "Arial", sans-serif;
+	font-size: 14px;
+	background-color: #e2e2e2;
+	text-align: right;
+	line-height: 43px;
+	border-style: solid;
+    border-width: 0.5px 0 1px 1px;
+    border-color: #dadada;
+    border-radius: 3px 0px 0px 3px;
+}
+
+#loc-wrap{
+	margin: auto;
+	left: 0px;
+	right: 0px;
+	width: 400px;
+}
+
+.loc-whole{
+	float: left;
+	margin: 5px;
+}
+
+.loc-field{
+	width: 314px;
+	height: 40px;
+}
+
+#date-wrap{
+	margin: auto;
+	left: 0px;
+	right: 0px;
+	width: 400px;
+}
+
+.date-box{
+	margin: 5px;
+	display: inline-block;
+}
+
+.date-field{
+	width: 116.5px;
+	height: 40px;
+	font-size: 12px;
+}
+
+#passenger-wrap{
+	margin: 10px;
+	height: 100px;
+}
+
+#count-container{
+	position: relative;
+	height: 100px;
+	width: 240px;
+	top: 15px;
+	left: 115px;
+}
+
+.count-pass{
+	float: left;
+	padding-right: 20px;
+	font-family: "Arial", sans-serif;
+	font-size: 14px;
+	position: relative;
+	margin: auto;
+	left: 0px;
+	right: 0px;
+}
+
+input[type=date]{
+	font-family: "Arial", sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+#submit-wrap{
+	margin: 10px;
+	height: 50px;
+}
+
+#submit-field{
+	margin: auto;
+	position: relative;
+	height: 100%;
+	width: 180px;
+	left: 0px;
+	right: 0px;
+}
+
+input[type=submit]{
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+	background-color: #e26d24;
+	letter-spacing: 1.5px;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	box-shadow: 0 2px #914f00;
+}
+
+input[type=submit]:hover{
+	background-color: #c44111;
+	box-shadow: 0 2px #c44111;
+	transition: 0.14s;
+	cursor: pointer;
+}

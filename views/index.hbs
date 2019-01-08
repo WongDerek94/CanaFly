@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="/stylesheets/index.css" rel="stylesheet" type="text/css"/>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+</head>
+<body>
+    <div id="home"></div>
+    <h1><i>CanaFly</i></h1>
+    <div class="button-container">
+        <div class="user-button" id="login">
+            Login
+        </div>
+        <div class="user-button" id="register">
+            Register
+        </div>
+        <div class="user-button" id="logout">
+            Logout
+        </div>
+    </div>
+    <div id="main-wrap">
+        <div id="search-main">
+            <h2>Quick Search</h2>
+            <form method="get" action="/results" method="post">
+                <div id="loc-wrap">
+                    <div class="loc-whole">
+                        <div class="search-label">From</div>
+                        <input type="text" class="loc-field" id="origin" name="origin" placeholder="Enter your starting point..">
+                    </div>
+                    <div class="loc-whole">
+                        <div class="search-label">To</div>
+                        <input type="text" class="loc-field" id="destination" name="destination" placeholder="Enter your destination..">
+                    </div>
+                </div>
+                <div id="date-wrap">
+                    <div class="date-box" id="departbox">
+                        <div class="search-label">Depart</div>
+                        <input type="text" class="date-field" id="departDate" name="departDate" placeholder="YYYY, MM, DD">
+                    </div>
+                    <div class="date-box" id="returnbox">
+                        <div class="search-label">Return</div>
+                        <input type="text" class="date-field" id="returnDate" name="returnDate" placeholder="YYYY, MM, DD">
+                    </div>
+                </div>
+                <div id="passenger-wrap">
+                    <div id="count-container">
+                        <div class="count-pass" id="adult-pass">
+                            Adults</br>
+                            <font size="1">12 years+</font></br>
+                            <input type="number" class="passenger-count" id="adult" name="adult" min="0" max="6" value="0">
+                        </div>
+                        <div class="count-pass" id="child-pass">
+                            Children</br>
+                            <font size="1">2-11 years</font></br>
+                            <input type="number" class="passenger-count" id="child" name="child" min="0" max="6" value="0">
+                        </div>
+                        <div class="count-pass" id="infant-pass">
+                            Infants</br>
+                            <font size="1">Under 2 years</font></br>
+                            <input type="number" class="passenger-count" id="infant" name="infant" min="0" max="6" value="0">
+                        </div>
+                    </div>
+                </div>
+                <div id="submit-wrap">
+                    <div id="submit-field">
+                        <input type="submit" value="Search Flights">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/javascripts/index.js"></script>
+</body>
+    {{> footer}}
+</html>

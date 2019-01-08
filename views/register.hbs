@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="/stylesheets/login.css" rel="stylesheet" type="text/css"/>
+	<meta charset="utf-8">
+	<title>{{title}}</title>
+</head>
+
+<body>
+	<div id="home"></div>
+	<h1><i>CanaFly</i></h1>
+	<div id="main-wrap">
+		<div id="main-wrap-cover"></div>
+		<div id="main-wrap-msg"><b>Finding the best flights </br>for you always</b></div>
+		<div id="login-wrap">
+			<div class="gen-main" id="register-main">
+				<h2><b>Register</b></h2>
+				<form method="get" action="/success">
+					<div id="form-wrap">
+						<div class="form-whole">
+							<div class="label">First Name</div>
+							<input type="text" class="form-field" id="fname" name="fname">
+						</div>
+						<div class="form-whole">
+							<div class="label">Last Name</div>
+							<input type="text" class="form-field" id="lname" name="lname">
+						</div>
+						<div class="form-whole">
+							<div class="label">Username</div>
+							<input type="text" class="form-field" id="username" name="username">
+						</div>
+						<div class="form-whole">
+							<div class="label">Password</div>
+							<input type="password" class="form-field" id="password" name="password">
+						</div>
+						<div class="form-whole">
+							<div class="label">Confirm Password</div>
+							<input type="password" class="form-field" id="confirmpw" name="confirmpw">
+						</div>
+					</div>
+					<div class="submit-wrap">
+						<div class="submit-field">
+							<input type="submit" value="Create Account">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="/javascripts/register.js"></script>
+</body>
+
+	{{> footer}}
+
+</html>

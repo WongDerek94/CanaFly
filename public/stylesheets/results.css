@@ -1,0 +1,134 @@
+body{
+	background-color: #f9fffe;
+}
+
+h1{
+	font-family: "Trebuchet MS", sans-serif;
+	letter-spacing: 4px;
+	color: #33373a;
+}
+
+#home{
+	position: absolute;
+	width: 147px;
+	height: 40px;
+}
+
+#home:hover{
+	cursor: pointer;
+}
+
+h2{
+	text-align: center;
+	font-family: "Trebuchet MS", sans-serif;
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+
+/*Account buttons
+*/
+.button-container{
+	position: absolute;
+	width: 180px;
+	height: 50px;
+	right: 0px;
+	top: 0px;
+	margin: 10px;
+}
+
+.user-button{
+	position: relative;
+	width: 64px;
+	height: 35px;
+	margin: 7px;
+	right: 0px;
+	background-color: #dddddd;
+	border-radius: 1px;
+	border-style: solid;
+    border-width: 0.5px 1px 1px 1px;
+    border-color: #c1c1c1;
+	text-align: center;
+	float: left;
+	line-height: 33px;
+	font-family: "Trebuchet MS", sans-serif;
+	box-shadow: 0.5px 1px #8c8c8c;
+}
+
+.user-button:hover{
+	cursor: pointer;
+}
+
+.user-button:active{
+	background-color: #c9c9c9;
+	border-color: #cecece;
+}
+
+/*Results container
+*/
+#main-wrap{
+	width: 100%;
+	height: 500px;
+	background-size: cover;
+	background-color: #edf1ff;
+	background-image: url(../img/landing.jpg);
+}
+
+#results-main{
+	margin: auto;
+	left: 100px;
+	width: fit-content;
+	background-color: white;
+	border-radius: 2px;
+	box-shadow: -1px 0px 1px 1px #846026, 1px 0px 1px 1px #846026;
+}
+
+#submit-wrap{
+	margin: 10px;
+	height: 50px;
+}
+
+#submit-field{
+	margin: auto;
+	position: relative;
+	height: 100%;
+	width: 180px;
+	left: 0px;
+	right: 0px;
+}
+
+input[type=submit]{
+	font-family: "Trebuchet MS", sans-serif;
+	color: white;
+	text-transform: uppercase;
+	background-color: #e26d24;
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 50px;
+	margin: auto;
+	left:0px;
+	right:0px;
+	bottom: -15px;
+	width: 180px;
+	height: 100%;
+	border-radius: 2px;
+	box-shadow: 0 2px #914f00;
+	z-index: 99999;
+}
+
+input[type=submit]:hover{
+	background-color: #c44111;
+	box-shadow: 0 2px #c44111;
+	transition: 0.14s;
+	cursor: pointer;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 2px;
+}
